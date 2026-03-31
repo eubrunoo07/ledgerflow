@@ -3,7 +3,7 @@ version: '3.9'
 services:
   postgres:
     image: postgres:17.4
-    container_name: varejo
+    container_name: ledgerflow-postgres
     restart: always
     environment:
       POSTGRES_USER: postgres
