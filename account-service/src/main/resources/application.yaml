@@ -1,3 +1,26 @@
 spring:
   application:
-    name: account-service
+    name: Account Service
+  datasource:
+    url: jdbc:postgresql://localhost:5555/account
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+#ledgerflow:
+#  config:
+#    kafka:
+#      server-url: "http://localhost:29092"
+#      topics:
+#        microservicename-events: "eventname-events"
+
+server:
+  port: 8081
