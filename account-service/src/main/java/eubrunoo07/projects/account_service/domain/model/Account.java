@@ -27,7 +27,6 @@ public class Account {
 
     public Account(String ownerName) {
         this.ownerName = ownerName;
-        this.id = UUID.randomUUID();
         this.balance = BigDecimal.ZERO;
         this.createdAt = LocalDateTime.now();
     }
