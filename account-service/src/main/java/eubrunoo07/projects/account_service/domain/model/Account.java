@@ -2,6 +2,7 @@ package eubrunoo07.projects.account_service.domain.model;
 
 import jakarta.persistence.*;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
@@ -10,6 +11,7 @@ import java.util.UUID;
 @Entity
 @Table(name = "accounts")
 @Data
+@NoArgsConstructor
 public class Account {
 
     @Id
